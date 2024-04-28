@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GITPOD</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -89,20 +90,64 @@
             <div class="box">
                 <h1>Remote-first. Secure by design.</h1>
                 <img class="img-box" src="./img/box-shadow.png" alt="img">
-                <p>You no longer need an over-powered laptop to code, Gitpod works just as <br> smoothly on a Chromebook or
-                    iPad. All you need is a browser. Gitpod centralizes  <br>all source code and never stores it on insecure
+                <p>You no longer need an over-powered laptop to code, Gitpod works just as <br> smoothly on a Chromebook
+                    or
+                    iPad. All you need is a browser. Gitpod centralizes <br>all source code and never stores it on
+                    insecure
                     machines and networks.</p>
 
-<div class="box-btns">
-    <button class="box-btn1"> <img src="./img/crome.svg" alt="img">Chrome Extension</button>
-    <button class="box-btn2"> <img src="./img/Vector.svg" alt="img">Firefox Extension</button>
-</div>
+                <div class="box-btns">
+                    <button class="box-btn1"> <img src="./img/crome.svg" alt="img">Chrome Extension</button>
+                    <button class="box-btn2"> <img src="./img/Vector.svg" alt="img">Firefox Extension</button>
+                </div>
             </div>
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="slider">
+                <h1>Used by 400,000+ developers.
+                </h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/slider1.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/slider2.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/slider3.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/slider1.png" alt="img"></div>
 
-
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo1.png" alt="img">
+                    <img src="./img/logo2.png" alt="img">
+                    <img src="./img/logo3.png" alt="img">
+                    <img src="./img/logo4.png" alt="img">
+                    <img src="./img/logo5.png" alt="img">
+                    <img src="./img/logo6.png" alt="img">
+                    <img src="./img/logo7.png" alt="img">
+                    <img src="./img/logo8.png" alt="img">
+                    <img src="./img/logo9.png" alt="img">
+                    <img src="./img/logo10.png" alt="img">
+                    <img src="./img/logo11.png" alt="img">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
