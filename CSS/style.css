@@ -291,8 +291,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-around;
- background: rgba(236, 231, 229, 1);
- padding: 20px 0;
+  background: rgba(236, 231, 229, 1);
+  padding: 20px 0;
 }
 .footer-end p {
   color: rgba(18, 16, 12, 0.7);
@@ -302,9 +302,83 @@ hr {
   line-height: 24px;
   text-align: left;
 }
-.footer-end button{
-    border-radius: 10px;
-    padding: 8px 20px;
-    background: white;
-    border: none;
+.footer-end button {
+  border-radius: 10px;
+  padding: 8px 20px;
+  background: white;
+  border: none;
+}
+.burger-icon {
+ width: 60px;
+ height: 60px;
+  display: none;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 890px) {
+  .header-nav  {
+    display: none;
+  }
+  .header button {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+    padding-right: 40px;
+  }
+  .gitpod{
+    padding-left: 40px;
+  }
+  .hero-text{
+    padding-left: 50px;
+  }
+  .hero img{
+    padding-right: 50px;
+    width: 50%;
+  }
+  .dev-info{
+    padding-left: 50px;
+  }
+  .dev img{
+    padding-right: 50px;
+    width: 50%;
+  }
+  #footer{
+    background: none;
+  }
+  .footer-logo{
+    justify-content: space-around;
+  }
+
+}
+@media (max-width: 650px) {
+.hero{
+  flex-direction: column;
+  gap: 40px;
+
+}
+.dev{
+  flex-direction: column;
+  gap: 50px;
+}
+.img-box{
+  width: 70%;
+margin-left: 200px;
+}
+.git-box{
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-git{
+  justify-content: center;
+  gap: 70px;
+}
+}
+@media (max-width: 1024) {
+}
+@media (max-width: 1024) {
+}
+@media (max-width: 1024) {
+}
+@media (max-width: 1024) {
 }
